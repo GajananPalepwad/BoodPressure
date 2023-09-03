@@ -1,0 +1,898 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_info_01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    android:orientation="vertical">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_102sdp"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_bg_detail_info_new_02"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingHorizontal="@dimen/_15sdp"
+                android:paddingLeft="@dimen/_15sdp"
+                android:paddingRight="@dimen/_15sdp">
+
+                <ImageView
+                    android:id="@+id/ic_logo"
+                    android:layout_width="@dimen/_46sdp"
+                    android:layout_height="@dimen/_46sdp"
+                    android:src="@drawable/ic_info_new_02" />
+
+                <TextView
+                    android:layout_width="@dimen/_161sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:autoSizeMaxTextSize="@dimen/_18ssp"
+                    android:autoSizeMinTextSize="@dimen/_10ssp"
+                    android:autoSizeStepGranularity="@dimen/_1ssp"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:gravity="center_vertical"
+                    android:maxLines="3"
+                    android:text="@string/is_my_blood_pressure_normal"
+                    android:textColor="@color/color_1E252B"
+                    android:textSize="@dimen/_15ssp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_14sdp"
+                android:background="@drawable/border_linear_info_detail"
+                android:orientation="vertical"
+                android:paddingHorizontal="@dimen/_18sdp"
+                android:paddingVertical="@dimen/_16sdp"
+                android:paddingLeft="@dimen/_18sdp"
+                android:paddingTop="@dimen/_16sdp"
+                android:paddingRight="@dimen/_18sdp"
+                android:paddingBottom="@dimen/_16sdp"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:maxLines="2"
+                    android:text="@string/define_blood_pressure"
+                    android:textColor="@color/color_323232"
+                    android:textSize="@dimen/_14ssp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:lineSpacingExtra="@dimen/_3sdp"
+                    android:text="@string/to_define_your_blood_pressure_numbers"
+                    android:textColor="@color/color_323232"
+                    android:textSize="@dimen/_12ssp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/relay_normal"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_60sdp">
+
+                        <ImageView
+                            android:id="@+id/view_color_normal"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_50sdp"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_status_01" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="@dimen/_15sdp"
+                            android:layout_toEndOf="@+id/view_color_normal"
+                            android:background="@drawable/border_type_dialog_level_01"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:ellipsize="end"
+                                    android:fontFamily="@font/montserrat_bold"
+                                    android:gravity="center_horizontal"
+                                    android:maxLines="1"
+                                    android:text="@string/_120"
+                                    android:textColor="@color/color_1E252B"
+                                    android:textSize="@dimen/_14ssp" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginHorizontal="@dimen/_10sdp"
+                                    android:layout_marginLeft="@dimen/_10sdp"
+                                    android:layout_marginRight="@dimen/_10sdp"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <View
+                                        android:layout_width="@dimen/_20sdp"
+                                        android:layout_height="1dp"
+                                        android:layout_weight="1"
+                                        android:background="@color/color_1E252B" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginHorizontal="@dimen/_5sdp"
+                                        android:layout_marginLeft="@dimen/_5sdp"
+                                        android:layout_marginRight="@dimen/_5sdp"
+                                        android:layout_weight="1"
+                                        android:autoSizeMaxTextSize="@dimen/_8ssp"
+                                        android:autoSizeMinTextSize="@dimen/_4ssp"
+                                        android:autoSizeStepGranularity="@dimen/_1ssp"
+                                        android:ellipsize="end"
+                                        android:fontFamily="@font/montserrat_regular"
+                                        android:gravity="center"
+                                        android:maxLines="1"
+                                        android:text="@string/and"
+                                        android:textColor="@color/color_1E252B"
+                                        android:textSize="@dimen/_8ssp" />
+
+                                    <View
+                                        android:layout_width="@dimen/_20sdp"
+                                        android:layout_height="1dp"
+                                        android:layout_weight="1"
+                                        android:background="@color/color_1E252B" />
+                                </LinearLayout>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:ellipsize="end"
+                                    android:fontFamily="@font/montserrat_bold"
+                                    android:gravity="center_horizontal"
+                                    android:maxLines="1"
+                                    android:text="@string/_80"
+                                    android:textColor="@color/color_1E252B"
+                                    android:textSize="@dimen/_14ssp" />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginVertical="@dimen/_5sdp"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:layout_marginBottom="@dimen/_5sdp"
+                                android:background="#99ffffff" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:ellipsize="end"
+                                android:fontFamily="@font/montserrat_bold"
+                                android:gravity="center_vertical"
+                                android:lineSpacingExtra="@dimen/_1sdp"
+                                android:maxLines="3"
+                                android:paddingStart="@dimen/_8sdp"
+                                android:text="@string/diagnose_level_01"
+                                android:textColor="@color/color_1E252B"
+                                android:textSize="@dimen/_9ssp" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/relay_elevated"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_60sdp"
+                        android:layout_marginTop="@dimen/_8sdp">
+
+                        <ImageView
+                            android:id="@+id/view_color_elevated"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_50sdp"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_status_02" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="@dimen/_15sdp"
+                            android:layout_toEndOf="@+id/view_color_elevated"
+                            android:background="@drawable/border_type_dialog_level_02"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:ellipsize="end"
+                                    android:fontFamily="@font/montserrat_bold"
+                                    android:gravity="center_horizontal"
+                                    android:maxLines="1"
+                                    android:text="@string/_120_129"
+                                    android:textColor="@color/color_1E252B"
+                                    android:textSize="@dimen/_14ssp" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginHorizontal="@dimen/_10sdp"
+                                    android:layout_marginLeft="@dimen/_10sdp"
+                                    android:layout_marginRight="@dimen/_10sdp"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <View
+                                        android:layout_width="@dimen/_20sdp"
+                                        android:layout_height="1dp"
+                                        android:layout_weight="1"
+                                        android:background="@color/color_1E252B" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginHorizontal="@dimen/_5sdp"
+                                        android:layout_marginLeft="@dimen/_5sdp"
+                                        android:layout_marginRight="@dimen/_5sdp"
+                                        android:layout_weight="1"
+                                        android:autoSizeMaxTextSize="@dimen/_8ssp"
+                                        android:autoSizeMinTextSize="@dimen/_4ssp"
+                                        android:autoSizeStepGranularity="@dimen/_1ssp"
+                                        android:ellipsize="end"
+                                        android:fontFamily="@font/montserrat_regular"
+                                        android:gravity="center"
+                                        android:maxLines="1"
+                                        android:text="@string/and"
+                                        android:textColor="@color/color_1E252B"
+                                        android:textSize="@dimen/_8ssp" />
+
+                                    <View
+                                        android:layout_width="@dimen/_20sdp"
+                                        android:layout_height="1dp"
+                                        android:layout_weight="1"
+                                        android:background="@color/color_1E252B" />
+                                </LinearLayout>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:ellipsize="end"
+                                    android:fontFamily="@font/montserrat_bold"
+                                    android:gravity="center_horizontal"
+                                    android:maxLines="1"
+                                    android:text="@string/_80"
+                                    android:textColor="@color/color_1E252B"
+                                    android:textSize="@dimen/_14ssp" />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginVertical="@dimen/_5sdp"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:layout_marginBottom="@dimen/_5sdp"
+                                android:background="#99ffffff" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:ellipsize="end"
+                                android:fontFamily="@font/montserrat_bold"
+                                android:gravity="center_vertical"
+                                android:lineSpacingExtra="@dimen/_1sdp"
+                                android:maxLines="3"
+                                android:paddingStart="@dimen/_8sdp"
+                                android:text="@string/diagnose_level_02"
+                                android:textColor="@color/color_1E252B"
+                                android:textSize="@dimen/_9ssp" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/relay_hypertension_stage_01"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_60sdp"
+                        android:layout_marginTop="@dimen/_8sdp">
+
+                        <ImageView
+                            android:id="@+id/view_color_hypertension_stage_01"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_50sdp"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_status_03" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="@dimen/_15sdp"
+                            android:layout_toEndOf="@+id/view_color_hypertension_stage_01"
+                            android:background="@drawable/border_type_dialog_level_03"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:ellipsize="end"
+                                    android:fontFamily="@font/montserrat_bold"
+                                    android:gravity="center_horizontal"
+                                    android:maxLines="1"
+                                    android:text="@string/_130_"
+                                    android:textColor="@color/color_1E252B"
+                                    android:textSize="@dimen/_14ssp" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginHorizontal="@dimen/_10sdp"
+                                    android:layout_marginLeft="@dimen/_10sdp"
+                                    android:layout_marginRight="@dimen/_10sdp"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <View
+                                        android:layout_width="@dimen/_20sdp"
+                                        android:layout_height="1dp"
+                                        android:layout_weight="1"
+                                        android:background="@color/color_1E252B" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginHorizontal="@dimen/_5sdp"
+                                        android:layout_marginLeft="@dimen/_5sdp"
+                                        android:layout_marginRight="@dimen/_5sdp"
+                                        android:layout_weight="1"
+                                        android:autoSizeMaxTextSize="@dimen/_8ssp"
+                                        android:autoSizeMinTextSize="@dimen/_4ssp"
+                                        android:autoSizeStepGranularity="@dimen/_1ssp"
+                                        android:ellipsize="end"
+                                        android:fontFamily="@font/montserrat_regular"
+                                        android:gravity="center"
+                                        android:maxLines="1"
+                                        android:text="@string/or"
+                                        android:textColor="@color/color_1E252B"
+                                        android:textSize="@dimen/_8ssp" />
+
+                                    <View
+                                        android:layout_width="@dimen/_20sdp"
+                                        android:layout_height="1dp"
+                                        android:layout_weight="1"
+                                        android:background="@color/color_1E252B" />
+                                </LinearLayout>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:ellipsize="end"
+                                    android:fontFamily="@font/montserrat_bold"
+                                    android:gravity="center_horizontal"
+                                    android:maxLines="1"
+                                    android:text="@string/_80_"
+                                    android:textColor="@color/color_1E252B"
+                                    android:textSize="@dimen/_14ssp" />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginVertical="@dimen/_5sdp"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:layout_marginBottom="@dimen/_5sdp"
+                                android:background="#99ffffff" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:ellipsize="end"
+                                android:fontFamily="@font/montserrat_bold"
+                                android:gravity="center_vertical"
+                                android:lineSpacingExtra="@dimen/_1sdp"
+                                android:maxLines="3"
+                                android:paddingStart="@dimen/_8sdp"
+                                android:paddingEnd="@dimen/_10sdp"
+                                android:text="@string/diagnose_level_03"
+                                android:textColor="@color/color_1E252B"
+                                android:textSize="@dimen/_9ssp" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/relay_hypertension_stage_02"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_60sdp"
+                        android:layout_marginTop="@dimen/_8sdp">
+
+                        <ImageView
+                            android:id="@+id/view_color_hypertension_stage_02"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_50sdp"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_status_04" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="@dimen/_15sdp"
+                            android:layout_toEndOf="@+id/view_color_hypertension_stage_02"
+                            android:background="@drawable/border_type_dialog_level_04"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:ellipsize="end"
+                                    android:fontFamily="@font/montserrat_bold"
+                                    android:gravity="center_horizontal"
+                                    android:maxLines="1"
+                                    android:text="@string/_140"
+                                    android:textColor="@color/color_1E252B"
+                                    android:textSize="@dimen/_14ssp" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginHorizontal="@dimen/_10sdp"
+                                    android:layout_marginLeft="@dimen/_10sdp"
+                                    android:layout_marginRight="@dimen/_10sdp"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <View
+                                        android:layout_width="@dimen/_20sdp"
+                                        android:layout_height="1dp"
+                                        android:layout_weight="1"
+                                        android:background="@color/color_1E252B" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginHorizontal="@dimen/_5sdp"
+                                        android:layout_marginLeft="@dimen/_5sdp"
+                                        android:layout_marginRight="@dimen/_5sdp"
+                                        android:layout_weight="1"
+                                        android:autoSizeMaxTextSize="@dimen/_8ssp"
+                                        android:autoSizeMinTextSize="@dimen/_4ssp"
+                                        android:autoSizeStepGranularity="@dimen/_1ssp"
+                                        android:ellipsize="end"
+                                        android:fontFamily="@font/montserrat_regular"
+                                        android:gravity="center"
+                                        android:maxLines="1"
+                                        android:text="@string/or"
+                                        android:textColor="@color/color_1E252B"
+                                        android:textSize="@dimen/_8ssp" />
+
+                                    <View
+                                        android:layout_width="@dimen/_20sdp"
+                                        android:layout_height="1dp"
+                                        android:layout_weight="1"
+                                        android:background="@color/color_1E252B" />
+                                </LinearLayout>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:ellipsize="end"
+                                    android:fontFamily="@font/montserrat_bold"
+                                    android:gravity="center_horizontal"
+                                    android:maxLines="1"
+                                    android:text="@string/_90"
+                                    android:textColor="@color/color_1E252B"
+                                    android:textSize="@dimen/_14ssp" />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginVertical="@dimen/_5sdp"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:layout_marginBottom="@dimen/_5sdp"
+                                android:background="#99ffffff" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:ellipsize="end"
+                                android:fontFamily="@font/montserrat_bold"
+                                android:gravity="center_vertical"
+                                android:lineSpacingExtra="@dimen/_1sdp"
+                                android:maxLines="3"
+                                android:paddingStart="@dimen/_8sdp"
+                                android:paddingEnd="@dimen/_10sdp"
+                                android:text="@string/diagnose_level_04"
+                                android:textColor="@color/color_1E252B"
+                                android:textSize="@dimen/_9ssp" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/relay_hypertensive"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_60sdp"
+                        android:layout_marginTop="@dimen/_8sdp">
+
+                        <ImageView
+                            android:id="@+id/view_color_hypertensive"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_50sdp"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_status_05" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="@dimen/_15sdp"
+                            android:layout_toEndOf="@+id/view_color_hypertensive"
+                            android:background="@drawable/border_type_dialog_level_05"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:ellipsize="end"
+                                    android:fontFamily="@font/montserrat_bold"
+                                    android:gravity="center_horizontal"
+                                    android:maxLines="1"
+                                    android:text="@string/_180"
+                                    android:textColor="@color/color_1E252B"
+                                    android:textSize="@dimen/_14ssp" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginHorizontal="@dimen/_10sdp"
+                                    android:layout_marginLeft="@dimen/_10sdp"
+                                    android:layout_marginRight="@dimen/_10sdp"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <View
+                                        android:layout_width="@dimen/_20sdp"
+                                        android:layout_height="1dp"
+                                        android:layout_weight="1"
+                                        android:background="@color/color_1E252B" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginHorizontal="@dimen/_5sdp"
+                                        android:layout_marginLeft="@dimen/_5sdp"
+                                        android:layout_marginRight="@dimen/_5sdp"
+                                        android:layout_weight="1"
+                                        android:autoSizeMaxTextSize="@dimen/_8ssp"
+                                        android:autoSizeMinTextSize="@dimen/_4ssp"
+                                        android:autoSizeStepGranularity="@dimen/_1ssp"
+                                        android:ellipsize="end"
+                                        android:fontFamily="@font/montserrat_regular"
+                                        android:gravity="center"
+                                        android:maxLines="1"
+                                        android:text="@string/and_or"
+                                        android:textColor="@color/color_1E252B"
+                                        android:textSize="@dimen/_8ssp" />
+
+                                    <View
+                                        android:layout_width="@dimen/_20sdp"
+                                        android:layout_height="1dp"
+                                        android:layout_weight="1"
+                                        android:background="@color/color_1E252B" />
+                                </LinearLayout>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:ellipsize="end"
+                                    android:fontFamily="@font/montserrat_bold"
+                                    android:gravity="center_horizontal"
+                                    android:maxLines="1"
+                                    android:text="@string/_120_"
+                                    android:textColor="@color/color_1E252B"
+                                    android:textSize="@dimen/_14ssp" />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginVertical="@dimen/_5sdp"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:layout_marginBottom="@dimen/_5sdp"
+                                android:background="#99ffffff" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:ellipsize="end"
+                                android:fontFamily="@font/montserrat_bold"
+                                android:gravity="center_vertical"
+                                android:lineSpacingExtra="@dimen/_1sdp"
+                                android:maxLines="3"
+                                android:paddingStart="@dimen/_8sdp"
+                                android:text="@string/diagnose_level_05"
+                                android:textColor="@color/color_1E252B"
+                                android:textSize="@dimen/_9ssp" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="@dimen/_14sdp"
+                            android:layout_height="@dimen/_14sdp"
+                            android:background="@drawable/bg_view_normal" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="@dimen/_15sdp"
+                            android:autoSizeMaxTextSize="@dimen/_14ssp"
+                            android:autoSizeMinTextSize="@dimen/_8ssp"
+                            android:autoSizeStepGranularity="@dimen/_1ssp"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:lineSpacingExtra="@dimen/_3sdp"
+                            android:maxLines="1"
+                            android:text="@string/_1_normal_blood_pressure"
+                            android:textColor="@color/color_323232"
+                            android:textSize="@dimen/_14ssp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:lineSpacingExtra="@dimen/_3sdp"
+                        android:text="@string/blood_pressure_numbers_of_less_than_120_80_mm_hg_are_considered_within_the_normal_range"
+                        android:textColor="@color/color_323232"
+                        android:textSize="@dimen/_12ssp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="@dimen/_14sdp"
+                            android:layout_height="@dimen/_14sdp"
+                            android:background="@drawable/bg_view_elevated" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="@dimen/_15sdp"
+                            android:autoSizeMaxTextSize="@dimen/_14ssp"
+                            android:autoSizeMinTextSize="@dimen/_8ssp"
+                            android:autoSizeStepGranularity="@dimen/_1ssp"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:lineSpacingExtra="@dimen/_3sdp"
+                            android:maxLines="1"
+                            android:text="@string/_2_elevated_blood_pressure"
+                            android:textColor="@color/color_323232"
+                            android:textSize="@dimen/_14ssp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:lineSpacingExtra="@dimen/_3sdp"
+                        android:text="@string/the_systolic_reading_is_between_120_and_129_mm"
+                        android:textColor="@color/color_323232"
+                        android:textSize="@dimen/_12ssp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="@dimen/_14sdp"
+                            android:layout_height="@dimen/_14sdp"
+                            android:background="@drawable/bg_view_high" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="@dimen/_15sdp"
+                            android:autoSizeMaxTextSize="@dimen/_14ssp"
+                            android:autoSizeMinTextSize="@dimen/_8ssp"
+                            android:autoSizeStepGranularity="@dimen/_1ssp"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:lineSpacingExtra="@dimen/_3sdp"
+                            android:maxLines="1"
+                            android:text="@string/_3_high_blood_pressure_stage_1"
+                            android:textColor="@color/color_323232"
+                            android:textSize="@dimen/_14ssp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:lineSpacingExtra="@dimen/_3sdp"
+                        android:text="@string/blood_pressure_consistently_ranges_at_140_90_mm_hg_or_higher"
+                        android:textColor="@color/color_323232"
+                        android:textSize="@dimen/_12ssp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="@dimen/_14sdp"
+                            android:layout_height="@dimen/_14sdp"
+                            android:background="@drawable/bg_view_high_stage_2" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="@dimen/_15sdp"
+                            android:autoSizeMaxTextSize="@dimen/_14ssp"
+                            android:autoSizeMinTextSize="@dimen/_8ssp"
+                            android:autoSizeStepGranularity="@dimen/_1ssp"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:lineSpacingExtra="@dimen/_3sdp"
+                            android:maxLines="1"
+                            android:text="@string/_4_high_blood_pressure_stage_2"
+                            android:textColor="@color/color_323232"
+                            android:textSize="@dimen/_14ssp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:lineSpacingExtra="@dimen/_3sdp"
+                        android:text="@string/blood_pressure_consistently_ranges_from_130_139_systolic_or_80_89_mm_hg_diastolic"
+                        android:textColor="@color/color_323232"
+                        android:textSize="@dimen/_12ssp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="@dimen/_14sdp"
+                        android:layout_height="@dimen/_14sdp"
+                        android:background="@drawable/bg_view_dangerous" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="@dimen/_15sdp"
+                        android:autoSizeMaxTextSize="@dimen/_14ssp"
+                        android:autoSizeMinTextSize="@dimen/_8ssp"
+                        android:autoSizeStepGranularity="@dimen/_1ssp"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:lineSpacingExtra="@dimen/_3sdp"
+                        android:maxLines="2"
+                        android:text="@string/_5_dangerously_high_blood_pressure"
+                        android:textColor="@color/color_323232"
+                        android:textSize="@dimen/_14ssp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:lineSpacingExtra="@dimen/_3sdp"
+                    android:text="@string/this_stage_of_high_blood_pressure_requires_medical_attention"
+                    android:textColor="@color/color_323232"
+                    android:textSize="@dimen/_12ssp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

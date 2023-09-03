@@ -1,4 +1,4 @@
-package com.gn4k.boodpressure.ui.blood;
+package com.gn4k.boodpressure.ui.heart;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
@@ -12,43 +12,46 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.gn4k.boodpressure.R;
-import com.gn4k.boodpressure.ui.blood.tabs.BloodPressureHistory;
 import com.gn4k.boodpressure.ui.Settings;
-import com.gn4k.boodpressure.ui.blood.tabs.BloodPressureTracker;
+import com.gn4k.boodpressure.ui.blood.tabs.BloodPressureHistory;
 import com.gn4k.boodpressure.ui.blood.tabs.BloodPressureInfo;
+import com.gn4k.boodpressure.ui.blood.tabs.BloodPressureTracker;
+import com.gn4k.boodpressure.ui.heart.tabs.HeartRateHistory;
+import com.gn4k.boodpressure.ui.heart.tabs.HeartRateTracker;
 
-public class HomeBlood extends AppCompatActivity {
+public class HomeHeart extends AppCompatActivity {
 
     View nav, tool ;
     LinearLayout tracker;
     LinearLayout history ;
-    LinearLayout info;
     LinearLayout settings;
     private FragmentManager fragmentManager;
     ImageView ivTracker, ivHistory, ivInfo, ivSettings;
     TextView tvTracker, tvHistory, tvInfo, tvSettings;
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home_blood);
+        setContentView(R.layout.activity_home_heart);
+
+        nav = findViewById(R.id.nav_bottom);
+        LinearLayout info = nav.findViewById(R.id.ll_info);
+        info.setVisibility(View.GONE);
 
         tool = findViewById(R.id.toolbar);
-        nav = findViewById(R.id.nav_bottom);
-
         TextView title = tool.findViewById(R.id.tv_title);
-        title.setText(getResources().getString(R.string.Blood_Pressure_Tracker));
+        title.setText(getResources().getString(R.string.Heart_Rate_Tracker));
+
+
 
 
         fragmentManager = getSupportFragmentManager();
-        replaceFragment(new BloodPressureTracker());
+        replaceFragment(new HeartRateTracker());
 
 
         tracker = nav.findViewById(R.id.ll_tracker);
         history = nav.findViewById(R.id.ll_history);
-        info = nav.findViewById(R.id.ll_info);
         settings = nav.findViewById(R.id.ll_settings);
 
         tvTracker = nav.findViewById(R.id.tv_tracker);
@@ -68,7 +71,7 @@ public class HomeBlood extends AppCompatActivity {
             title.setText(getResources().getString(R.string.Blood_Pressure_Tracker));
             tvTracker.setTextColor(getResources().getColor(R.color.color_4969D7));
             ivTracker.setImageResource(R.drawable.ic_tracker_01);
-            replaceFragment(new BloodPressureTracker());
+            replaceFragment(new HeartRateTracker());
 
 
         });
@@ -79,21 +82,11 @@ public class HomeBlood extends AppCompatActivity {
             title.setText(getResources().getString(R.string.History));
             tvHistory.setTextColor(getResources().getColor(R.color.color_4969D7));
             ivHistory.setImageResource(R.drawable.ic_history_01);
-            replaceFragment(new BloodPressureHistory());
+            replaceFragment(new HeartRateHistory());
 
 
         });
 
-        info.setOnClickListener(v -> {
-
-            resetTabState();
-            title.setText(getResources().getString(R.string.InfoAndKnowledge));
-            tvInfo.setTextColor(getResources().getColor(R.color.color_4969D7));
-            ivInfo.setImageResource(R.drawable.ic_info_01);
-            replaceFragment(new BloodPressureInfo());
-
-
-        });
 
         settings.setOnClickListener(v -> {
 
@@ -108,17 +101,16 @@ public class HomeBlood extends AppCompatActivity {
 
 
 
+
     }
 
     void resetTabState() {
         ivTracker.setImageResource(R.drawable.ic_tracker_02);
         ivHistory.setImageResource(R.drawable.ic_history_02);
-        ivInfo.setImageResource(R.drawable.ic_info_02);
         ivSettings.setImageResource(R.drawable.ic_settings_02);
 
         tvTracker.setTextColor(getResources().getColor(R.color.color_BCCADC));
         tvHistory.setTextColor(getResources().getColor(R.color.color_BCCADC));
-        tvInfo.setTextColor(getResources().getColor(R.color.color_BCCADC));
         tvSettings.setTextColor(getResources().getColor(R.color.color_BCCADC));
     }
 

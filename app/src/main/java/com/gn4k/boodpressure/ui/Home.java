@@ -9,6 +9,7 @@ import android.widget.RelativeLayout;
 
 import com.gn4k.boodpressure.R;
 import com.gn4k.boodpressure.ui.blood.HomeBlood;
+import com.gn4k.boodpressure.ui.heart.HomeHeart;
 
 public class Home extends AppCompatActivity {
 
@@ -25,7 +26,7 @@ public class Home extends AppCompatActivity {
         });
 
         heart.setOnClickListener(v -> {
-            Intent intent = new Intent(Home.this, HomeBlood.class);
+            Intent intent = new Intent(Home.this, HomeHeart.class);
             startActivity(intent);
         });
     }

@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/color_F5F5F5"
+    tools:context=".ui.blood.tabs.BloodPressureInfo">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_15sdp"
+        android:background="#f5f5f5"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_180sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_multiple_level" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <RelativeLayout
+                android:id="@+id/relay_level_01"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/ic_bg_info_new_01">
+
+                <ImageView
+                    android:id="@+id/iv_info_01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:src="@drawable/ic_info_new_01" />
+
+                <ImageView
+                    android:id="@+id/iv_next_01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    android:src="@drawable/ic_next_info_new_01"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_info_01"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    android:autoSizeMaxTextSize="@dimen/_10ssp"
+                    android:autoSizeMinTextSize="@dimen/_8ssp"
+                    android:autoSizeStepGranularity="@dimen/_1ssp"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:maxLines="2"
+                    android:text="@string/learn_about_blood_pressure"
+                    android:textColor="@color/color_1E252B"
+                    android:textSize="@dimen/_10ssp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relay_level_02"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_weight="1"
+                android:background="@drawable/ic_bg_info_new_02">
+
+                <ImageView
+                    android:id="@+id/iv_info_02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:src="@drawable/ic_info_new_02" />
+
+                <ImageView
+                    android:id="@+id/iv_next_02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    android:src="@drawable/ic_next_info_new_02"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_info_02"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    android:autoSizeMaxTextSize="@dimen/_10ssp"
+                    android:autoSizeMinTextSize="@dimen/_8ssp"
+                    android:autoSizeStepGranularity="@dimen/_1ssp"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:maxLines="2"
+                    android:text="@string/is_my_blood_pressure_normal"
+                    android:textColor="@color/color_1E252B"
+                    android:textSize="@dimen/_10ssp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_12ssp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <RelativeLayout
+                android:id="@+id/relay_level_06"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/ic_bg_info_new_06">
+
+                <ImageView
+                    android:id="@+id/iv_info_06"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:src="@drawable/ic_info_new_06" />
+
+                <ImageView
+                    android:id="@+id/iv_next_06"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    android:src="@drawable/ic_next_info_new_06"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_info_06"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    android:autoSizeMaxTextSize="@dimen/_10ssp"
+                    android:autoSizeMinTextSize="@dimen/_8ssp"
+                    android:autoSizeStepGranularity="@dimen/_1ssp"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:maxLines="2"
+                    android:text="@string/High_Blood_Pressure_in_Pregnancy"
+                    android:textColor="@color/color_1E252B"
+                    android:textSize="@dimen/_10ssp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relay_level_04"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_weight="1"
+                android:background="@drawable/ic_bg_info_new_04">
+
+                <ImageView
+                    android:id="@+id/iv_info_04"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:src="@drawable/ic_info_new_04" />
+
+                <ImageView
+                    android:id="@+id/iv_next_04"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    android:src="@drawable/ic_next_info_new_04"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_info_04"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    android:autoSizeMaxTextSize="@dimen/_10ssp"
+                    android:autoSizeMinTextSize="@dimen/_8ssp"
+                    android:autoSizeStepGranularity="@dimen/_1ssp"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:maxLines="2"
+                    android:text="@string/how_can_i_prevent_high_blood_pressure"
+                    android:textColor="@color/color_1E252B"
+                    android:textSize="@dimen/_10ssp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_12ssp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <RelativeLayout
+                android:id="@+id/relay_level_03"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/ic_bg_info_new_03">
+
+                <ImageView
+                    android:id="@+id/iv_info_03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:src="@drawable/ic_info_new_03" />
+
+                <ImageView
+                    android:id="@+id/iv_next_03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    android:src="@drawable/ic_next_info_new_03"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_info_03"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    android:autoSizeMaxTextSize="@dimen/_10ssp"
+                    android:autoSizeMinTextSize="@dimen/_8ssp"
+                    android:autoSizeStepGranularity="@dimen/_1ssp"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:maxLines="2"
+                    android:text="@string/who_is_at_risk_for_high_blood_pressure"
+                    android:textColor="@color/color_1E252B"
+                    android:textSize="@dimen/_10ssp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relay_level_07"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_weight="1"
+                android:background="@drawable/ic_bg_info_new_07"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/iv_info_07"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:src="@drawable/ic_info_new_07" />
+
+                <ImageView
+                    android:id="@+id/iv_next_07"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    android:src="@drawable/ic_next_info_new_07"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_info_07"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    android:autoSizeMaxTextSize="@dimen/_10ssp"
+                    android:autoSizeMinTextSize="@dimen/_8ssp"
+                    android:autoSizeStepGranularity="@dimen/_1ssp"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:maxLines="2"
+                    android:text="@string/Dier_plan_to_prevent_hypertension_DASH"
+                    android:textColor="@color/color_1E252B"
+                    android:textSize="@dimen/_10ssp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_12ssp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <RelativeLayout
+                android:id="@+id/relay_level_05"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/ic_bg_info_new_05"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/iv_info_05"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:src="@drawable/ic_info_new_05" />
+
+                <ImageView
+                    android:id="@+id/iv_next_05"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    android:src="@drawable/ic_next_info_new_05"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_info_05"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    android:autoSizeMaxTextSize="@dimen/_10ssp"
+                    android:autoSizeMinTextSize="@dimen/_8ssp"
+                    android:autoSizeStepGranularity="@dimen/_1ssp"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:maxLines="2"
+                    android:text="@string/lower_blood_pressure_by_exercises"
+                    android:textColor="@color/color_1E252B"
+                    android:textSize="@dimen/_10ssp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

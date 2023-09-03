@@ -1,4 +1,4 @@
-package com.gn4k.boodpressure.ui.blood.tabs;
+package com.gn4k.boodpressure.ui.heart.tabs;
 
 import android.os.Bundle;
 
@@ -10,28 +10,23 @@ import android.view.ViewGroup;
 
 import com.gn4k.boodpressure.R;
 
-public class BloodPressureSettings extends Fragment {
+
+public class HeartRateTracker extends Fragment {
 
 
 
-    public BloodPressureSettings() {
+    public HeartRateTracker() {
         // Required empty public constructor
     }
 
 
-
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-
-        }
-    }
-
+    View view;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        view = inflater.inflate(R.layout.fragment_heart_rate_tracker, container, false);
+
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_blood_pressure_settings, container, false);
+        return view;
     }
 }

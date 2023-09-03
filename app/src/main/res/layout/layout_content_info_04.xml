@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_info_01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_102sdp"
+        android:layout_gravity="center"
+        android:background="@drawable/ic_bg_detail_info_new_04"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingHorizontal="@dimen/_15sdp"
+        android:paddingLeft="@dimen/_15sdp"
+        android:paddingRight="@dimen/_15sdp">
+
+        <ImageView
+            android:id="@+id/ic_logo"
+            android:layout_width="@dimen/_46sdp"
+            android:layout_height="@dimen/_46sdp"
+            android:src="@drawable/ic_info_new_04" />
+
+        <TextView
+            android:layout_width="@dimen/_161sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:autoSizeMaxTextSize="@dimen/_18ssp"
+            android:autoSizeMinTextSize="@dimen/_10ssp"
+            android:autoSizeStepGranularity="@dimen/_1ssp"
+            android:ellipsize="end"
+            android:fontFamily="@font/montserrat_bold"
+            android:gravity="center_vertical"
+            android:maxLines="3"
+            android:text="@string/how_can_i_prevent_high_blood_pressure"
+            android:textColor="@color/color_1E252B"
+            android:textSize="@dimen/_15ssp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_14sdp"
+        android:background="@drawable/border_linear_info_detail"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/_18sdp"
+        android:paddingVertical="@dimen/_16sdp"
+        android:paddingLeft="@dimen/_18sdp"
+        android:paddingTop="@dimen/_16sdp"
+        android:paddingRight="@dimen/_18sdp"
+        android:paddingBottom="@dimen/_16sdp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:fontFamily="@font/montserrat_bold"
+            android:maxLines="2"
+            android:text="@string/introduction"
+            android:textColor="@color/color_323232"
+            android:textSize="@dimen/_14ssp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:fontFamily="@font/montserrat_regular"
+            android:lineSpacingExtra="@dimen/_3sdp"
+            android:text="@string/you_can_help_prevent_high_blood_pressure"
+            android:textColor="@color/color_323232"
+            android:textSize="@dimen/_12ssp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="@dimen/_14sdp"
+                android:layout_height="@dimen/_14sdp"
+                android:background="@drawable/bg_view_prevent_hight_bp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:autoSizeMaxTextSize="@dimen/_14ssp"
+                android:autoSizeMinTextSize="@dimen/_8ssp"
+                android:autoSizeStepGranularity="@dimen/_1ssp"
+                android:ellipsize="end"
+                android:fontFamily="@font/montserrat_bold"
+                android:lineSpacingExtra="@dimen/_3sdp"
+                android:maxLines="1"
+                android:text="@string/eating_a_healthy_diet"
+                android:textColor="@color/color_323232"
+                android:textSize="@dimen/_14ssp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:fontFamily="@font/montserrat_regular"
+            android:lineSpacingExtra="@dimen/_3sdp"
+            android:text="@string/to_help_manage_your_blood_pressure"
+            android:textColor="@color/color_323232"
+            android:textSize="@dimen/_12ssp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="@dimen/_14sdp"
+                android:layout_height="@dimen/_14sdp"
+                android:background="@drawable/bg_view_prevent_hight_bp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:autoSizeMaxTextSize="@dimen/_14ssp"
+                android:autoSizeMinTextSize="@dimen/_8ssp"
+                android:autoSizeStepGranularity="@dimen/_1ssp"
+                android:ellipsize="end"
+                android:fontFamily="@font/montserrat_bold"
+                android:lineSpacingExtra="@dimen/_3sdp"
+                android:maxLines="1"
+                android:text="@string/getting_regular_exercise"
+                android:textColor="@color/color_323232"
+                android:textSize="@dimen/_14ssp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:fontFamily="@font/montserrat_regular"
+            android:lineSpacingExtra="@dimen/_3sdp"
+            android:text="@string/exercise_can_help_you_maintain_a_healthy"
+            android:textColor="@color/color_323232"
+            android:textSize="@dimen/_12ssp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="@dimen/_14sdp"
+                android:layout_height="@dimen/_14sdp"
+                android:background="@drawable/bg_view_prevent_hight_bp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:autoSizeMaxTextSize="@dimen/_14ssp"
+                android:autoSizeMinTextSize="@dimen/_8ssp"
+                android:autoSizeStepGranularity="@dimen/_1ssp"
+                android:ellipsize="end"
+                android:fontFamily="@font/montserrat_bold"
+                android:lineSpacingExtra="@dimen/_3sdp"
+                android:maxLines="1"
+                android:text="@string/being_at_a_healthy_weight"
+                android:textColor="@color/color_323232"
+                android:textSize="@dimen/_14ssp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:fontFamily="@font/montserrat_regular"
+            android:lineSpacingExtra="@dimen/_3sdp"
+            android:text="@string/being_overweight_or_having_obesity_increases"
+            android:textColor="@color/color_323232"
+            android:textSize="@dimen/_12ssp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="@dimen/_14sdp"
+                android:layout_height="@dimen/_14sdp"
+                android:background="@drawable/bg_view_prevent_hight_bp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:autoSizeMaxTextSize="@dimen/_14ssp"
+                android:autoSizeMinTextSize="@dimen/_8ssp"
+                android:autoSizeStepGranularity="@dimen/_1ssp"
+                android:ellipsize="end"
+                android:fontFamily="@font/montserrat_bold"
+                android:lineSpacingExtra="@dimen/_3sdp"
+                android:maxLines="1"
+                android:text="@string/limiting_alcohol"
+                android:textColor="@color/color_323232"
+                android:textSize="@dimen/_14ssp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:fontFamily="@font/montserrat_regular"
+            android:lineSpacingExtra="@dimen/_3sdp"
+            android:text="@string/drinking_too_much_alcohol_can_raise_your_blood_pressure"
+            android:textColor="@color/color_323232"
+            android:textSize="@dimen/_12ssp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="@dimen/_14sdp"
+                android:layout_height="@dimen/_14sdp"
+                android:background="@drawable/bg_view_prevent_hight_bp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:autoSizeMaxTextSize="@dimen/_14ssp"
+                android:autoSizeMinTextSize="@dimen/_8ssp"
+                android:autoSizeStepGranularity="@dimen/_1ssp"
+                android:ellipsize="end"
+                android:fontFamily="@font/montserrat_bold"
+                android:lineSpacingExtra="@dimen/_3sdp"
+                android:maxLines="1"
+                android:text="@string/not_smoking"
+                android:textColor="@color/color_323232"
+                android:textSize="@dimen/_14ssp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:fontFamily="@font/montserrat_regular"
+            android:lineSpacingExtra="@dimen/_3sdp"
+            android:text="@string/cigarette_smoking_raises_your_blood_pressure"
+            android:textColor="@color/color_323232"
+            android:textSize="@dimen/_12ssp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="@dimen/_14sdp"
+                android:layout_height="@dimen/_14sdp"
+                android:background="@drawable/bg_view_prevent_hight_bp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:autoSizeMaxTextSize="@dimen/_14ssp"
+                android:autoSizeMinTextSize="@dimen/_8ssp"
+                android:autoSizeStepGranularity="@dimen/_1ssp"
+                android:ellipsize="end"
+                android:fontFamily="@font/montserrat_bold"
+                android:lineSpacingExtra="@dimen/_3sdp"
+                android:maxLines="1"
+                android:text="@string/managing_stress"
+                android:textColor="@color/color_323232"
+                android:textSize="@dimen/_14ssp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:fontFamily="@font/montserrat_regular"
+            android:lineSpacingExtra="@dimen/_3sdp"
+            android:text="@string/learning_how_to_relax_and_manage_stress"
+            android:textColor="@color/color_323232"
+            android:textSize="@dimen/_12ssp" />
+    </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

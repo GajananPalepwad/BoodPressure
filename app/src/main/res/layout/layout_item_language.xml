@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relay_language"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_60sdp"
+    android:layout_marginHorizontal="@dimen/_15sdp"
+    android:layout_marginTop="@dimen/_12sdp"
+    android:background="@drawable/border_item_language_un_select"
+    android:paddingStart="@dimen/_10sdp"
+    android:tag="layout/layout_item_language_0">
+
+    <RelativeLayout
+        android:id="@+id/card_avatar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+
+        <ImageView
+            android:id="@+id/img_avatar"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:contentDescription="@null" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/_9sdp"
+        android:layout_toEndOf="@+id/card_avatar"
+        android:fontFamily="@font/montserrat_light"
+        android:tag="binding_1"
+        android:textColor="#24282d"
+        android:textSize="@dimen/_12ssp" />
+
+    <RadioButton
+        android:id="@+id/rb_active"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:button="@drawable/state_radio_language"
+        android:textColor="@color/white" />
+</RelativeLayout>
